@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy flatten="true" todir="/home/skovks/Documents/GitHub/Demo-Java-Raspberry/target/distribution" overwrite="true">
+    <fileset includes="*.sh" dir="assets"></fileset>
+  </copy>
+  <chmod perm="ugo+rx" includes="**/*.sh" dir="/home/skovks/Documents/GitHub/Demo-Java-Raspberry/target/distribution"/>
+</target>
+</project>
